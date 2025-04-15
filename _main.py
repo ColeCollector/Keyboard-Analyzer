@@ -63,7 +63,8 @@ def evaluate(layouts, corpus="keymash"):
         "Adj-Outrolls":     -5.0, 
         "Tri-Adj-outroll":  -5.0 * 1.5, 
         "Alt":              -0.4, 
-        "LSB":               1.0
+        "LSB":               1.0,
+        "Roll-Ratio":        0.0
     }
 
     for layout in layouts:
@@ -197,6 +198,8 @@ def evaluate(layouts, corpus="keymash"):
         for j in stats:
             movement += stats[j]*weights[j]
 
+        stats['Roll-Ratio'] = stats['Inrolls'] / stats['Outrolls']
+   
         #if sorted(layout[2][7:]) != ",.?" and layout[0][7:] != "ou;": 
         #    movement += 500000
 

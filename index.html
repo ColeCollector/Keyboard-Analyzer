@@ -156,37 +156,37 @@
         <div class = "box">
         <h2 class = "metric">Bad SFB:</h2>
         <p>Pressing two keys in succession with the same finger with a distance > 1</p>
-        <p class="ex">For example, ce or ft<p>
+        <p class="ex">For example, ce or ft</p>
         </div>
         
         <div class = "box">
         <h2 class = "metric">Scissor:</h2>
-        <p>Pressing two keys with different fingers, one on the top row and one on the bottom row using pinky, ring or middle finger</p>
-        <p class="ex">For example, zw, xe or cw<p>
-        </div>
-
-        <div class = "box">
-        <h2 class = "metric">Bad Scissor:</h2>
         <p>Pressing two keys with different fingers, one on the top row and one on the bottom row using both middle and index finger</p>
         <p class="ex">For example, ve or cr</p>
         </div>
 
         <div class = "box">
+        <h2 class = "metric">Bad Scissor:</h2>
+        <p>Pressing two keys with different fingers, one on the top row and one on the bottom row using pinky, ring or middle finger</p>
+        <p class="ex">For example, zw, xe or cw</p>
+        </div>
+
+        <div class = "box">
         <h2 class = "metric">LSB:</h2>
-        <p>A sequence of middle finger and middle column keys.</p>
-        <p class="ex">For example, be or gd</p>
+        <p>A sequence of middle finger and middle column keys, one on the top row and one on the bottom row</p>
+        <p class="ex">For example, be or tc</p>
         </div>
 
         <div class = "box">
         <h2 class = "metric">Redirect:</h2>
         <p>A one-handed sequence of at least three letters that 'changes directions'</p>
-        <p class="ex">For example, sfd would be a redirect, but sdf would not<p>
+        <p class="ex">For example, sfd would be a redirect, but sdf would not</p>
         </div>
 
         <div class = "box">
         <h2 class = "metric">Bad Redirect:</h2>
         <p>A one-handed sequence of at least three letters that 'changes directions' and doesn't involve your index finger</p>
-        <p class="ex">For example, asq or zxd</p>
+        <p class="ex">For example, asq or zdx</p>
         </div>
 
         <div class = "box">
@@ -308,24 +308,24 @@
                 xMetricsChoices = new Choices(xMetricsSelect, {
                     removeItemButton: true,
                     searchEnabled: true,
-                    placeholderValue: 'Select X Axis Metrics',
+                    placeholderValue: 'Search X Axis Metrics',
                 });
                 yMetricsChoices = new Choices(yMetricsSelect, {
                     removeItemButton: true,
                     searchEnabled: true,
-                    placeholderValue: 'Select Y Axis Metrics',
+                    placeholderValue: 'Search Y Axis Metrics',
                 });
 
                 // Restore selections if they still exist in the new metric list
                 previousXSelections.forEach(value => {
                     if (metricKeys.includes(value)) {
-                    xMetricsChoices.setChoiceByValue(value);
+                      xMetricsChoices.setChoiceByValue(value);
                     }
                 });
 
                 previousYSelections.forEach(value => {
                     if (metricKeys.includes(value)) {
-                    yMetricsChoices.setChoiceByValue(value);
+                      yMetricsChoices.setChoiceByValue(value);
                     }
                 });
             }
