@@ -74,13 +74,8 @@
         .choices__list--dropdown, .choices__inner, 
         .choices__item--selectable  {
             box-sizing: border-box;
-            width: 21vw !important;
             background-color: #131313 !important;
             color: #9c9c9c !important;
-        }
-
-        .choices__item--selectable {
-            width: 122px !important;
         }
 
         .choices__item--choice {
@@ -91,13 +86,31 @@
         .choices__button {
             border-left: none !important;
             box-shadow: none !important;
+            position: absolute !important;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 8px;
+            line-height: 1;
+            color: #9c9c9c;
         }
 
-        .choices__item--selectable:hover{
+        .choices__item--choice {
+            width: 100% !important;
+        }
+
+        .choices__item--selectable {
+            width: 122px;
+            position: relative;
+            padding-right: 24px !important;
+            height: 50px !important;
+            line-height: 50px !important;
+            padding: 0 28px 0 12px !important;
+            box-sizing: border-box;
+        }
+        
+        .choices__item--selectable:hover, .choices__button:hover {
             background-color: #444 !important;
         }
-
-    
     </style>  
 </head>
 
