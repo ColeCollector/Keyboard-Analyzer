@@ -5,4 +5,4 @@ Used to see diferent metrics relating to how comfortable/fast a keyboard layout 
 I made a website for this project which analyzes all of the layouts i could get my hands on from a keyboard layout discord server. It allows you to zoom, customize corpus, x and y axis. It also provides a definition for all of these different metrics. 
 
 
-![Image](https://github.com/user-attachments/assets/53b4a3df-3a14-4c74-bebf-c6959727ae7e)
+<img width="1920" height="1200" alt="Image" src="https://github.com/user-attachments/assets/68c50b71-4601-417b-82e6-e80a57aeb10e" />
